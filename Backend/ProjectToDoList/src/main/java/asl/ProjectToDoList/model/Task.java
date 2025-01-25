@@ -13,13 +13,13 @@ public class Task {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "TaskId")
+    @Column(name = "TASKID")
     private Long id;
 
-    @Column(name = "TaskTitle", nullable = false)
+    @Column(name = "TASKTITLE", nullable = false)
     private String title;
 
-    @Column(name = "TaskStatus", nullable = false)
+    @Column(name = "TASKSTATUS", nullable = false)
     private String status = "TODO";  // Default value
 
     // Default constructor required by JPA
